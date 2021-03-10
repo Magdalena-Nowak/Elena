@@ -6528,6 +6528,7 @@ footer {
           align-items: center;
   height: 100%;
   padding: 0.5rem 0;
+  margin: 0 2rem;
 }
 
 .footer-wrapper h2 {
@@ -6636,12 +6637,16 @@ footer {
   .work-description p {
     font-size: 1.2rem;
   }
-  .gallery-title h1 {
-    font-size: 2rem;
+  .head-nav a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .gallery-title {
+    display: none;
+  }
   .gallery-photo {
         grid-template-areas: "photo1" "photo2" "photo3" "photo4";
     -ms-grid-columns: 1fr;
@@ -6664,9 +6669,6 @@ footer {
   .gallery-p4 {
     -o-object-position: top;
        object-position: top;
-  }
-  .gallery-title {
-    display: none;
   }
 }
 
@@ -6704,14 +6706,72 @@ footer {
   }
 }
 
-/*HAMBURGER MENU*/
-.hamburger {
-  display: none;
+@media screen and (max-width: 633px) {
+  .head-logo,
+  .head-nav {
+    font-size: 1.4rem;
+  }
 }
 
-.hamburger span {
-  padding: 0.2rem 2rem;
-  background-color: black;
-  margin: 0.5rem 0rem;
+@media screen and (max-width: 600px) {
+  .head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem;
+  }
+  .head-nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 2vh;
+            flex: 1 1 2vh;
+  }
+  .head-logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 2vh;
+            flex: 2 1 2vh;
+  }
+  .head-nav,
+  .head-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-wrapper h2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 3vh;
+            flex: 1 1 3vh;
+    padding: 0;
+  }
+  .footer-wrapper ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 3vh;
+            flex: 1 1 3vh;
+  }
+  .footer-wrapper li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    padding: 1rem 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
